@@ -1,6 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    font-family:'Montserrat',
+    font-family:'Montserrat', 
     sans-serif;
+    margin: 0px;
+}
+
+:root {
+    --primary-color: #00B0FF;
+    --text-color: white;
+    --grey-header: #6b7280;
+    --of-color: #f3f4f6;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.link-primary {
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    background-color: #00B0FF;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+.link-secondary {
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.hr {
+    margin-top: 2rem;
+}
+
+.nav {
+    background-color: var(--primary-color);
+    padding: 1rem 0.5rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.list-nav {
+    list-style: none;
+    text-align: right;
+}
+
+.list-non-bullet .list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.nav .brand {
+    color: var(--text-color);
+    font-size: large;
+}
+
+.nav .list-nav .links-nav {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav .list-nav .link-active {
+    font-weight: bold;
+}
+
+.img-header {
+    display: block;
+    max-width: 350px;
+    margin: 2rem auto; /* 2rem added for avoiding additional margin declaration to give space above and below img, it was 'auto' initially */
+}
+
+.header-heading {
+    text-align: center;
+    color: var(--grey-header);
+}
+
+.header-heading .highlighted-heading {
+    color: var(--primary-color);
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.section-w {
+    padding: 1rem;
+    /* border: 1px solid; */
+}
+
+.section-ow {
+    background-color: var(--of-color);
+    padding: 1rem;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    border-top-right-radius: 1.1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.heading-footer {
+    color: var(--text-color);
+}
+
+.list-footer {
+    padding-inline-start: 0px;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: var(--text-color);
 }
