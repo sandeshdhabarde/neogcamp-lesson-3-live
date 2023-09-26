@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 body {
-    font-family:'Montserrat', 
+    font-family:'Merriweather', 
     sans-serif;
     margin: 0px;
 }
@@ -10,7 +10,7 @@ body {
     --primary-color: #00B0FF;
     --text-color: white;
     --grey-header: #6b7280;
-    --of-color: #f3f4f6;
+    --ow-color: #f3f4f6;
 }
 
 .container {
@@ -46,7 +46,7 @@ body {
 
 .nav {
     background-color: var(--primary-color);
-    padding: 1rem 0.5rem;
+    padding: 1.8rem 1rem;
     border-bottom-left-radius: 1rem;
 }
 
@@ -57,12 +57,13 @@ body {
 
 .list-non-bullet .list-item-inline {
     display: inline;
-    padding: 0rem 0.5rem;
+    padding: 0rem 1rem;
 }
 
 .nav .brand {
     color: var(--text-color);
     font-size: large;
+    font-weight: bold;
 }
 
 .nav .list-nav .links-nav {
@@ -74,13 +75,17 @@ body {
     font-weight: bold;
 }
 
+.header {
+    padding: 2rem;
+}
+
 .img-header {
     display: block;
     max-width: 350px;
-    margin: 2rem auto; /* 2rem added for avoiding additional margin declaration to give space above and below img, it was 'auto' initially */
+    margin: auto;
 }
 
-.header-heading {
+.header .header-heading {
     text-align: center;
     color: var(--grey-header);
 }
@@ -89,19 +94,22 @@ body {
     color: var(--primary-color);
 }
 
+.section {
+    padding: 2rem;
+}
+
 .section-heading {
     text-align: center;
 }
 
 .section-w {
-    padding: 1rem;
-    /* border: 1px solid; */
+    padding: 3rem 1rem;
 }
 
 .section-ow {
-    background-color: var(--of-color);
-    padding: 1rem;
-}
+    background-color: var(--ow-color);
+    padding: 3rem 1rem;
+} 
 
 .footer {
     background-color: var(--primary-color);
@@ -121,4 +129,8 @@ body {
 .links-footer {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.para {
+    padding-bottom: 0.5rem;
 }
